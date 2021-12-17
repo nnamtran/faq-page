@@ -105,15 +105,15 @@ a {
 .question:hover {
   color: hsl(14, 88%, 65%);
 }
-.accordion-item.active:target .answer {
+.accordion-item:target .answer {
   max-height: 100px;
 }
-.accordion-item.active:target .question {
+.accordion-item:target .question {
   color: hsl(238, 29%, 16%);
   font-weight: 700;
   font-size: 1.3rem;
 }
-.accordion-item.active img {
+.accordion-item:target img {
   transform: rotate(180deg);
 }
 
@@ -162,10 +162,13 @@ a {
         font-size: 1.1rem;
         margin-top: 7%;
     }
-    .accordion-item.active .question {
+    .accordion-item:target .question {
         color: hsl(238, 29%, 16%);
         font-weight: 700;
         font-size: 1.1rem;
+    }
+    .accordion-item:target .answer {
+        max-height: 100px;
     }
     .answer {
         line-height: 1.5rem;
