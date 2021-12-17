@@ -105,10 +105,10 @@ a {
 .question:hover {
   color: hsl(14, 88%, 65%);
 }
-.accordion-item.active .answer {
+.accordion-item.active:target .answer {
   max-height: 100px;
 }
-.accordion-item.active .question {
+.accordion-item.active:target .question {
   color: hsl(238, 29%, 16%);
   font-weight: 700;
   font-size: 1.3rem;
